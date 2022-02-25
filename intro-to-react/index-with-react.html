@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Tutorial</title>
+
+    <!-- Load Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- These two script tags are needed to implementing react into our code -->
+    <!-- https://reactjs.org/docs/add-react-to-a-website.html#step-2-add-the-script-tags -->
+      <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  </head>
+  <body>
+
+    <!--
+        When writing React code, this single <div> elemtn is all that we need
+          in our HTML code.
+        The 'id' can be named anything. 'root' is just the traditional naming
+          convention.
+        React code will generate every HTML code into this <div> element. -->
+    <div id="root"></div>
+
+    <!-- This is the JavaScipt file that we will be working with. -->
+    <!-- Keep this below the HTML code because we want the HTML to be loaded first -->
+    <!-- <script src="index-with-react.js"></script> -->
+
+    <!-- Change the type of the <script> so it can work with Babel -->
+    <script type="text/babel" src="index-with-react.js"></script>
+  </body>
+</html>
